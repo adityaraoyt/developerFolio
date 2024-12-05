@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import {illustration, skillsSection} from "../../portfolio";
+import {illustration, skillsSection, currentWork} from "../../portfolio";
 import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
@@ -29,9 +29,7 @@ export default function Skills() {
         </Fade>
         <Fade right duration={1000}>
           <div className="skills-text-div">
-            <h1
-              className={isDark ? "dark-mode skills-heading" : "skills-heading"}
-            >
+            <h1 className={isDark ? "dark-mode skills-heading" : "skills-heading"}>
               {skillsSection.title}{" "}
             </h1>
             <p
@@ -43,12 +41,43 @@ export default function Skills() {
             >
               {skillsSection.subTitle}
             </p>
+            
             <SoftwareSkill />
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (
                   <p
                     key={i}
+                    className={
+                      isDark
+                        ? "dark-mode subTitle skills-text"
+                        : "subTitle skills-text"
+                    }
+                  >
+                    {skills}
+                  </p>
+                );
+              })}
+            </div>
+              <br></br>
+            <div>
+              <h1 className={isDark ? "dark-mode skills-heading" : "skills-heading"}>
+                {currentWork.title}{" "}
+              </h1>
+              <p
+                className={
+                  isDark
+                    ? "dark-mode subTitle skills-text-subtitle"
+                    : "subTitle skills-text-subtitle"
+                }
+              >
+                {currentWork.subTitle}
+              </p>
+              
+              {currentWork.skills && currentWork.skills.map((skills, i) => {
+                return (
+                  <p
+                    key={`current-${i}`}
                     className={
                       isDark
                         ? "dark-mode subTitle skills-text"
