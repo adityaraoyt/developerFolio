@@ -108,13 +108,12 @@ const currentWork = {
   subTitle: "ACTIVE PROJECTS AND RESEARCH INITIATIVES",
   skills: [
     emoji(
-      "🤖 Build Automation Workflows and integrate them with existing LLM applications"
+      "🤖 Building Automation Workflows and integrating them with existing LLM applications"
     ),
     emoji(
       "🧠 Researching advanced finetuning techniques for improved text-to-image and text-to-video generation"
     )
   ],
-  display: true // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -218,28 +217,50 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "SOME OF THE PROJECTS I'VE WORKED ON OVER THE YEARS",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/websocketflow.png"),
+      projectName: "Websocket Flow",
+      projectDesc: "An interactive chat flow interface where users can communicate with AI models through a visual graph of connected nodes, with each node representing either a human input or an AI response, connected via WebSocket for real-time communication.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "GitHub Repo",
+          url: "https://github.com/adityaraoyt/websocket-flow"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/rag_enabled_email_automation.png"),
+      projectName: "RAG-enabled Email Automation",
+      projectDesc: "Sends out follow up AI generated emails automatically on a periodic basis",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "GitHub Repo",
+          url: "https://github.com/adityaraoyt/RAG-Enabled-Email-Automation"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/data_visualization.png"),
+      projectName: "Blockchain Data Visualization",
+      projectDesc: "An interactive blockchain explorer that visualizes over 10,000 transactions and market trends to make blockchain data more intuitive and accessible",
+      footerLink: [
+        {
+          name: "GitHub Repo",
+          url: "https://github.com/adityaraoyt/BlockchainVis"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/chatbot.png"),
+      projectName: "Empathetic Response Generating Chatbot",
+      projectDesc: "An empathetic chatbot that analyzes user emotions and generates personalized, supportive responses to promote mental well-being",
+      footerLink: [
+        {
+          name: "GitHub Repo",
+          url: "https://github.com/adityaraoyt/Empathetic-response-generating-chatbot"
         }
       ]
     }
